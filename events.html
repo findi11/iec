@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="css/events/events-text.css">
     <link rel="stylesheet" href="css/events/events-offer.css">
     <link rel="stylesheet" href="css/events/delegates.css">
-
+    <link rel="stylesheet" href="css/events/form.css">
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/css/intlTelInput.css" />
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/utils.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -149,7 +155,7 @@
                                 IEC Telecom Group</div>
                         </div>
                     </div>
-                     <div class="delegates__item">
+                    <div class="delegates__item">
                         <img src="img/mark.png" alt="">
                         <div class="delegates__item-text">
                             <div class="name">First name Last name</div>
@@ -169,6 +175,46 @@
             </div>
         </div>
     </div>
+    <div class="form">
+        <div class="app-container">
+            <form action="" novalidate>
+                <input type="text" name="first-name" placeholder="First Name...">
+                <input type="text" name="last-name" placeholder="Last Name...">
+                <input type="text" name="company" placeholder="Company...">
+                <input type="text" id="phone" name="phone" placeholder="Phone...">
+                <input type="text" name="email" placeholder="Email...">
+                <div class="country">
+                    <select id="country" name="country">
+                        <option value=""></option>
+                        <option value="UA">Україна</option>
+                        <option value="UA">Україна1</option>
+                    </select>
+                </div>
+                <div class="interest">
+                    <select id="interest" name="interest">
+                        <option value="test">test1</option>
+                        <option value="test1">test1</option>
+                    </select>
+                </div>
+                <input type="text" name="message" placeholder="Message">
+                <div class="How did you hear about us?">
+                    <select id="hear" name="hear">
+                        <option value=""></option>
+                        <option value="UA">Україна</option>
+                        <option value="UA">Україна1</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <div class="left">
+                        <span>Promo code</span>
+                        <input type="text" name="promo_code">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/phone.js"></script>
 </body>
 
 </html>
