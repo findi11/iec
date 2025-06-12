@@ -6,3 +6,14 @@
     width: 100%;
     height: 700px;
 }
+
+@media screen and (max-width:1024px) {
+    .video-section {
+        margin: 0 0 32px 0;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

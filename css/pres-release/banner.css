@@ -72,16 +72,110 @@
     color: #FFFFFF;
 }
 
-.banner-image__wrapper{
+.banner-image__wrapper {
     width: 710px;
     position: absolute;
     right: 0;
     height: 450px;
     overflow: hidden;
-    border-radius: 80px 0 0 0 ;
+    border-radius: 80px 0 0 0;
 }
-.banner-image__wrapper img{
+
+.banner-image__wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width:1024px) {
+    .banner {
+        position: relative;
+    }
+
+    .banner__wrapper {
+        margin-top: 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner__text {
+        margin-top: 0;
+        margin-left: -16px;
+        display: flex;
+        flex-direction: column;
+        background: #1B204C;
+        justify-content: center;
+        padding: 24px 16px;
+        width: 100%;
+        border-radius: 0;
+        gap: 20px;
+    }
+
+    .banner__text-top {
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        height: 43px;
+        align-items: baseline;
+        position: relative;
+        border-bottom: 1px solid #727DA3;
+    }
+
+
+    .banner__text-top__category {
+        font-family: Myriad Pro;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12px;
+        background: #727DA3;
+        border-radius: 50px;
+    }
+
+    .banner__text-top__date {
+        font-family: Myriad Pro;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 155%;
+        letter-spacing: 2px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #758592;
+    }
+
+    .banner__wrapper .title {
+        font-family: Myriad Pro;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .banner-image__wrapper {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        position: relative;
+        right: 0;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    .banner-image__wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
