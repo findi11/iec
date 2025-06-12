@@ -106,3 +106,120 @@
     letter-spacing: 1px;
     color: #FFFFFF;
 }
+
+@media screen and (max-width:1024px) {
+    .events-offer {
+        padding: 0 0 32px 0;
+    }
+
+    .events-offer__wrapper {
+        background: linear-gradient(104.96deg, #1B204C 25.2%, #50362A 92.39%);
+        height: auto;
+        display: flex;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding: 20px 0;
+        flex-direction: column-reverse;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .events-offer__text {
+        display: flex;
+        flex-direction: column;
+        max-width:100%;
+        gap: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 20px;
+
+    }
+
+    .events-offer__text h3 {
+        font-family: Myriad Pro;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .events-offer__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .events-offer__desc-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .events-offer__desc-item span {
+        font-family: Myriad Pro;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+    .events-offer__desc-item p {
+        font-family: Myriad Pro;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+    .events-offer__speaker {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .events-offer__speaker img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-right:0;
+        margin-top: -22px;
+        margin: 0 auto;
+    }
+
+    .events-offer__speaker__wrapper {
+        display: flex;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        padding: 24px 12px;
+        background: #1B204C;
+        border-radius:0;
+    }
+
+    .events-offer__speaker__wrapper h4 {
+        font-family: Myriad Pro;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+    .events-offer__speaker__wrapper .desc {
+        font-family: Myriad Pro;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+    }
+}
