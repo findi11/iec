@@ -1,0 +1,68 @@
+.delegates {
+    padding-bottom: 96px;
+}
+
+.delegates__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.delegates__wrapper h3 {
+    font-family: Myriad Pro;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #1B204C;
+}
+
+.delegates__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 95px 56px;
+}
+
+.delegates__item {
+    display: flex;
+    width: calc(50% - 28px);
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.delegates__item img {
+    width: 182px;
+    height: 182px;
+    background: #D9D9D9;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.delegates__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.delegates__item-text .name {
+    font-family: Myriad Pro;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #1B204C;
+}
+
+.delegates__item-text .position {
+    font-family: Myriad Pro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #1B204C;
+    display: flex;
+    flex-direction: column;
+}
