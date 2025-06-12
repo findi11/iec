@@ -1,0 +1,113 @@
+.related-articles {
+    margin: 52px 0 37px 0;
+}
+
+.related-articles__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.related-articles__wrapper h4 {
+    font-family: Myriad Pro;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #1B204C;
+}
+
+.related-articles__items {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+
+}
+
+.related-articles__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: calc(33% - 19px);
+
+}
+
+.related-articles__item .img-wrapper {
+    width: 100%;
+    height: 251px;
+}
+
+.related-articles__item .img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.related-articles__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.related-articles__item-text__info {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    border-bottom: 1px solid #758592;
+    justify-content: space-between;
+}
+
+.related-articles__item-text__info .category {
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    padding: 0 12px;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    background: #727DA3;
+}
+
+.related-articles__item-text__info .date {
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 155%;
+    letter-spacing: 2px;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #758592;
+}
+
+.related-articles__item-text h5 {
+    font-family: Myriad Pro;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1B204C;
+}
+
+.related-articles__item-text a {
+    margin-top: -11px;
+    font-family: Myriad Pro;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #727DA3;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+}

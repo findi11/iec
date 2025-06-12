@@ -1,0 +1,89 @@
+.text-sections {
+    padding: 72px 0;
+}
+
+.text-sections__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.text-sections__info {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.text-sections__info .text {
+    font-family: Myriad Pro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #27284A;
+}
+
+.text-sections__info .text a {
+    font-family: Myriad Pro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #27284A;
+    text-decoration: underline;
+}
+
+.text-sections__info img {
+    width: 416px;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-sections__info .image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text-sections__info .image-section a {
+    padding: 0 20px;
+    font-family: Myriad Pro;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #727DA3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: fit-content;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.with-image {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-family: Myriad Pro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #27284A;
+}
+
+.with-image:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.with-image img {
+    width: 438px;
+    height: 287px;
+}
