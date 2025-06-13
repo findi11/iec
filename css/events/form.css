@@ -158,6 +158,10 @@ form input::placeholder {
     background: none !important;
     height: 45px !important;
     border-radius: 0 !important;
+    border-bottom: none !important;
+
+}
+.country ,.hear ,.interest{
     border-bottom: 1px solid #758592 !important;
 
 }
@@ -190,7 +194,7 @@ form input::placeholder {
     line-height: 26px;
     color: #758592 !important;
     letter-spacing: -0.4px;
-    border-bottom: 1px solid #758592 !important;
+    border-bottom: none !important;
 
 }
 
@@ -226,4 +230,17 @@ form input::placeholder {
 .select2-container .select2-search--inline .select2-search__field{
     margin-top: 10px!important;
     height: 21px!important;
+}
+.select2-container{
+    width: fit-content;
+}
+
+.inputs input.field-invalid {
+    border-bottom: 1px solid red !important;
+}
+input.field-invalid {
+    border-bottom: 1px solid red !important;
+}
+.field-invalid {
+    border-bottom: 1px solid red !important;
 }
