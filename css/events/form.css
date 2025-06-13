@@ -51,6 +51,13 @@ form input::placeholder {
     display: flex;
     align-items: center;
     gap: 8px;
+    width: 100%;
+}
+
+.inputs .right {
+    display: flex;
+    align-items: center;
+    gap: 44px;
 }
 
 .inputs .left span {
@@ -60,14 +67,38 @@ form input::placeholder {
     line-height: 26px;
     letter-spacing: -0.4px;
     color: #758592;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.form-btn {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0 66px;
+    font-family: Myriad Pro;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.59deg, #1B204C 2.41%, #727DA3 99.82%);
 }
 
 .inputs .left input {
-    max-width: 295px;
+    max-width: 290px;
     width: 100%;
     background: #FFFFFF66 !important;
     border-radius: 8px;
-    border: 1px solid #758592!important;
+    border: 1px solid #758592 !important;
 
 }
 
@@ -131,6 +162,10 @@ form input::placeholder {
 
 }
 
+.select2-container--default .select2-selection--multiple {
+    min-height: 46px !important;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
     font-family: Myriad Pro;
     font-weight: 400;
@@ -170,4 +205,25 @@ form input::placeholder {
     line-height: 26px;
     color: #758592 !important;
     letter-spacing: -0.4px;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple {
+    position: relative;
+    padding-right: 30px; 
+}
+.select2-container--default .select2-selection--multiple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    border: solid #333;
+    border-width: 0 1.5px 1.5px 0;
+    transform: translateY(-50%) rotate(45deg);
+    pointer-events: none;
+}
+.select2-container .select2-search--inline .select2-search__field{
+    margin-top: 10px!important;
+    height: 21px!important;
 }

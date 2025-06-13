@@ -191,7 +191,7 @@
                     </select>
                 </div>
                 <div class="interest">
-                    <select id="interest" name="interest">
+                    <select id="interest" name="interest" multiple>
                         <option value="test">test1</option>
                         <option value="test1">test1</option>
                     </select>
@@ -199,9 +199,9 @@
                 <input type="text" name="message" placeholder="Message">
                 <div class="How did you hear about us?">
                     <select id="hear" name="hear">
-                        <option value=""></option>
-                        <option value="UA">Україна</option>
-                        <option value="UA">Україна1</option>
+                        <option></option>
+                        <option value="UA">instagram</option>
+                        <option value="UA">telegram</option>
                     </select>
                 </div>
                 <div class="inputs">
@@ -209,7 +209,24 @@
                         <span>Promo code</span>
                         <input type="text" name="promo_code">
                     </div>
+                    <div class="right">
+                        <div id="google-captcha-holder" data-sitekey="6Lcz_MUUAAAAAIZnyj86rG9kqMHVFPD3tzV_t_8F">
+                            <div class="g-recaptcha" id="g-recaptcha">
+                                <div style="width: 304px; height: 78px;">
+                                    <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
+                                            name="a-c7oivfafhukj" frameborder="0" scrolling="no"
+                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcz_MUUAAAAAIZnyj86rG9kqMHVFPD3tzV_t_8F&amp;co=aHR0cHM6Ly9pZWMtdGVsZWNvbS5jb206NDQz&amp;hl=en&amp;v=GUGrl5YkSwpBsxsF3eY665Ye&amp;size=normal&amp;cb=hg5i9qpvqt2y"></iframe>
+                                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                        class="g-recaptcha-response"
+                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                </div><iframe style="display: none;"></iframe>
+                            </div>
+                        </div>
+                        <button class="form-btn" type="submit">Send</button>
+                    </div>
                 </div>
+
             </form>
         </div>
     </div>

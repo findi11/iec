@@ -662,117 +662,117 @@ document.addEventListener("DOMContentLoaded", function () {
     const promoWrapper = document.getElementById('promo_wrapper');
     const validCode = 'philmarine25';
 
-    promoInput.addEventListener('input', function () {
-        const value = promoInput.value.trim().toLowerCase();
-        if (value !== validCode && value !== '') {
-            promoWrapper.classList.add('field-invalid');
-        } else {
-            promoWrapper.classList.remove('field-invalid');
-        }
-    });
+    if (promoInput) {
+        promoInput.addEventListener('input', function () {
+            const value = promoInput.value.trim().toLowerCase();
+            if (value !== validCode && value !== '') {
+                promoWrapper.classList.add('field-invalid');
+            } else {
+                promoWrapper.classList.remove('field-invalid');
+            }
+        });
+    }
 
 });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-   const countrySelect = document.getElementById('country');
-   const interestSelect = document.getElementById('interest');
-   const hearSelect = document.getElementById('hear');
+    const countrySelect = document.getElementById('country');
+    const interestSelect = document.getElementById('interest');
+    const hearSelect = document.getElementById('hear');
 
-   $(countrySelect).select2({
-       placeholder: "Country...",
-       allowClear: true,
-       templateResult: formatCountry,
-       templateSelection: formatCountry
-   });
+    $(countrySelect).select2({
+        placeholder: "Country...",
+        allowClear: true,
+        templateResult: formatCountry,
+        templateSelection: formatCountry
+    });
 
-   $(interestSelect).select2({
-       placeholder: "Interest...",
-       allowClear: true,
-       multiple: true,
-       templateResult: formatInterest,
-       templateSelection: formatInterest
-   });
+    $(interestSelect).select2({
+        placeholder: "Interest...",
+        allowClear: true,
+        multiple: true,
+    });
 
-   $(hearSelect).select2({
-       placeholder: "How did you hear about us?...",
-       allowClear: true,
-       templateResult: formatHear,
-       templateSelection: formatHear
-   });
+    $(hearSelect).select2({
+        placeholder: "How did you hear about us?...",
+        allowClear: true,
+        templateResult: formatHear,
+        templateSelection: formatHear
+    });
 
-   function formatCountry(country) {
-       if (!country.id) {
-           return country.text;
-       }
+    function formatCountry(country) {
+        if (!country.id) {
+            return country.text;
+        }
 
-       const span = document.createElement('span');
-       const flagSpan = document.createElement('span');
-       flagSpan.textContent = country.element.dataset.flag;
+        const span = document.createElement('span');
+        const flagSpan = document.createElement('span');
+        flagSpan.textContent = country.element.dataset.flag;
 
-       span.appendChild(document.createTextNode(country.text));
+        span.appendChild(document.createTextNode(country.text));
 
-       return span;
-   }
+        return span;
+    }
 
-   function formatInterest(interest) {
-       if (!interest.id) {
-           return interest.text;
-       }
+    function formatInterest(interest) {
+        if (!interest.id) {
+            return interest.text;
+        }
 
-       const span = document.createElement('span');
-       const iconSpan = document.createElement('span');
-       iconSpan.textContent = interest.element.dataset.icon;
+        const span = document.createElement('span');
+        const iconSpan = document.createElement('span');
+        iconSpan.textContent = interest.element.dataset.icon;
 
-       span.appendChild(document.createTextNode(interest.text));
+        span.appendChild(document.createTextNode(interest.text));
 
-       return span;
-   }
+        return span;
+    }
 
-   function formatHear(hear) {
-       if (!hear.id) {
-           return hear.text;
-       }
+    function formatHear(hear) {
+        if (!hear.id) {
+            return hear.text;
+        }
 
-       const span = document.createElement('span');
-       const iconSpan = document.createElement('span');
-       iconSpan.textContent = hear.element.dataset.icon;
+        const span = document.createElement('span');
+        const iconSpan = document.createElement('span');
+        iconSpan.textContent = hear.element.dataset.icon;
 
-       span.appendChild(document.createTextNode(hear.text));
+        span.appendChild(document.createTextNode(hear.text));
 
-       return span;
-   }
+        return span;
+    }
 
-   countrySelect.addEventListener('select2:select', function (e) {
-       const placeholder = document.querySelector('.placeholder');
-       placeholder.style.display = 'none';
-   });
+    countrySelect.addEventListener('select2:select', function (e) {
+        const placeholder = document.querySelector('.placeholder');
+        placeholder.style.display = 'none';
+    });
 
-   countrySelect.addEventListener('select2:clear', function (e) {
-       const placeholder = document.querySelector('.placeholder');
-       placeholder.style.display = 'block';
-   });
+    countrySelect.addEventListener('select2:clear', function (e) {
+        const placeholder = document.querySelector('.placeholder');
+        placeholder.style.display = 'block';
+    });
 
-   interestSelect.addEventListener('select2:select', function (e) {
-       const placeholder = document.querySelector('.interest .placeholder');
-       placeholder.style.display = 'none';
-   });
+    interestSelect.addEventListener('select2:select', function (e) {
+        const placeholder = document.querySelector('.interest .placeholder');
+        placeholder.style.display = 'none';
+    });
 
-   interestSelect.addEventListener('select2:unselect', function (e) {
-       const selectedValues = $(interestSelect).val();
-       if (!selectedValues || selectedValues.length === 0) {
-           const placeholder = document.querySelector('.interest .placeholder');
-           placeholder.style.display = 'block';
-       }
-   });
+    interestSelect.addEventListener('select2:unselect', function (e) {
+        const selectedValues = $(interestSelect).val();
+        if (!selectedValues || selectedValues.length === 0) {
+            const placeholder = document.querySelector('.interest .placeholder');
+            placeholder.style.display = 'block';
+        }
+    });
 
-   hearSelect.addEventListener('select2:select', function (e) {
-       const placeholder = document.querySelector('.hear .placeholder');
-       placeholder.style.display = 'none';
-   });
+    hearSelect.addEventListener('select2:select', function (e) {
+        const placeholder = document.querySelector('.hear .placeholder');
+        placeholder.style.display = 'none';
+    });
 
-   hearSelect.addEventListener('select2:clear', function (e) {
-       const placeholder = document.querySelector('.hear .placeholder');
-       placeholder.style.display = 'block';
-   });
+    hearSelect.addEventListener('select2:clear', function (e) {
+        const placeholder = document.querySelector('.hear .placeholder');
+        placeholder.style.display = 'block';
+    });
 });
