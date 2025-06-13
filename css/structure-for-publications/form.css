@@ -1,0 +1,246 @@
+.form {
+    padding: 38px 0;
+    box-shadow: 0px 0px 18.5px 0px #00000040 inset;
+    background: #F1F2F7;
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 45px 34px;
+    flex-wrap: wrap;
+}
+
+form input {
+    width: calc(33% - 23px);
+    height: 42px;
+    outline: none;
+    background: transparent;
+    padding-right: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #758592;
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    color: #758592;
+}
+
+form input::placeholder {
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    color: #758592;
+
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.inputs .right {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.inputs .left span {
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    color: #758592;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.form-btn {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0 66px;
+    font-family: Myriad Pro;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.59deg, #1B204C 2.41%, #727DA3 99.82%);
+}
+
+.inputs .left input {
+    max-width: 290px;
+    width: 100%;
+    background: #FFFFFF66 !important;
+    border-radius: 8px;
+    border: 1px solid #758592 !important;
+
+}
+
+.iti {
+    width: calc(33% - 23px);
+}
+
+.iti input {
+    width: 100%;
+}
+
+#country,
+.select2-container,
+#interest,
+#hear {
+    height: 100%;
+    position: relative;
+    font-family: Myriad Pro;
+    font-weight: 400;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    color: #758592 !important;
+    background: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    max-height: 400px;
+}
+
+.country,
+.interest,
+.hear {
+    position: relative;
+    width: calc(33% - 23px);
+
+}
+
+.country .placeholder {
+    bottom: 8px;
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    color: #758592;
+    position: absolute;
+    left: 0;
+}
+
+.select2-container--default .select2-selection--single {
+    background: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background: none !important;
+    height: 45px !important;
+    border-radius: 0 !important;
+    border-bottom: none !important;
+
+}
+.country ,.hear ,.interest{
+    border-bottom: 1px solid #758592 !important;
+
+}
+
+.select2-container--default .select2-selection--multiple {
+    min-height: 46px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #758592 !important;
+    letter-spacing: -0.4px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-top: 5px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #758592 !important;
+    letter-spacing: -0.4px;
+    border-bottom: none !important;
+
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    font-family: Myriad Pro;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #758592 !important;
+    letter-spacing: -0.4px;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple {
+    position: relative;
+    padding-right: 30px; 
+}
+.select2-container--default .select2-selection--multiple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    border: solid #333;
+    border-width: 0 1.5px 1.5px 0;
+    transform: translateY(-50%) rotate(45deg);
+    pointer-events: none;
+}
+.select2-container .select2-search--inline .select2-search__field{
+    margin-top: 10px!important;
+    height: 21px!important;
+}
+.select2-container{
+    width: fit-content;
+}
+
+.inputs input.field-invalid {
+    border-bottom: 1px solid red !important;
+}
+input.field-invalid {
+    border-bottom: 1px solid red !important;
+}
+.field-invalid {
+    border-bottom: 1px solid red !important;
+}

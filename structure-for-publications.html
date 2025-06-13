@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="css/structure-for-publications/text-sections.css">
     <link rel="stylesheet" href="css/structure-for-publications/video-section.css">
     <link rel="stylesheet" href="css/structure-for-publications/related.css">
+    <link rel="stylesheet" href="css/structure-for-publications/form.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/css/intlTelInput.css" />
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/utils.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -136,6 +143,61 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
         </div>
     </div>
+     <div class="form">
+        <div class="app-container">
+            <form action="" novalidate>
+                <input type="text" name="first-name" placeholder="First Name...">
+                <input type="text" name="last-name" placeholder="Last Name...">
+                <input type="text" name="company" placeholder="Company...">
+                <input type="text" id="phone" name="phone" placeholder="Phone...">
+                <input type="text" name="email" placeholder="Email...">
+                <div class="country">
+                    <select id="country" name="country">
+                        <option value=""></option>
+                        <option value="UA">Україна</option>
+                        <option value="UA">Україна1</option>
+                    </select>
+                </div>
+                <div class="interest">
+                    <select id="interest" name="interest" multiple>
+                        <option value="test">test1</option>
+                        <option value="test1">test1</option>
+                    </select>
+                </div>
+                <input type="text" name="message" placeholder="Message">
+                <div class="How did you hear about us?">
+                    <select id="hear" name="hear">
+                        <option></option>
+                        <option value="UA">instagram</option>
+                        <option value="UA">telegram</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <div class="left">
+                        <span>Promo code</span>
+                        <input type="text" name="promo_code">
+                    </div>
+                    <div class="right">
+                        <!-- <div id="google-captcha-holder" data-sitekey="6Lcz_MUUAAAAAIZnyj86rG9kqMHVFPD3tzV_t_8F">
+                            <div class="g-recaptcha" id="g-recaptcha">
+                                <div style="width: 304px; height: 78px;">
+                                    <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
+                                            name="a-c7oivfafhukj" frameborder="0" scrolling="no"
+                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcz_MUUAAAAAIZnyj86rG9kqMHVFPD3tzV_t_8F&amp;co=aHR0cHM6Ly9pZWMtdGVsZWNvbS5jb206NDQz&amp;hl=en&amp;v=GUGrl5YkSwpBsxsF3eY665Ye&amp;size=normal&amp;cb=hg5i9qpvqt2y"></iframe>
+                                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                        class="g-recaptcha-response"
+                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                </div><iframe style="display: none;"></iframe>
+                            </div>
+                        </div> -->
+                        <button class="form-btn" type="submit">Send</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
     <div class="related-articles">
         <div class="app-container ">
             <div class="related-articles__wrapper swiper">
@@ -240,6 +302,8 @@
             </div>
         </div>
     </div>
+     <script src="js/phone.js"></script>
+    <script src="js/form-validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
 </body>
