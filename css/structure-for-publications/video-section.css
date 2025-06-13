@@ -10,12 +10,10 @@
 @media screen and (max-width:1024px) {
     .video-section {
         margin: 0 0 40px 0;
-        width: calc(100% + 32px);
     }
 
     .video-section iframe {
         width: 100%;
-        margin-left: -16px;
         height: 220px;
     }
 }

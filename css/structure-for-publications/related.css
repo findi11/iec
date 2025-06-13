@@ -33,6 +33,53 @@
 
 }
 
+.swiper .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.navs-slider {
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.navs-slider {
+    display: none;
+    gap: 10px;
+    position: absolute;
+    width: fit-content;
+    right: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    opacity: 1 !important;
+    position: unset !important;
+    left: unset !important;
+    right: unset !important;
+    margin: 0 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next rect{
+    stroke-opacity: 1!important;
+    fill-opacity: 1!important;
+}
+
+.swiper-button-prev,
+.swiper-button-next path{
+    fill-opacity: 1!important;
+    stroke-opacity: 1!important;
+
+}
+.swiper-button-disabled{
+    transition: all 0.4s ease-in-out;
+    opacity: 0.2!important;
+}
 .related-articles__item .img-wrapper {
     width: 100%;
     height: 251px;
@@ -114,18 +161,21 @@
 
 @media screen and (max-width:1024px) {
     .related-articles {
-        margin: 32px 0;
+        margin: 40px 0;
+    }
+
+    .navs-slider {
+        display: flex;
     }
 
     .related-articles__wrapper {
-        gap: 20px;
-        padding-bottom: 32px;
+        gap: 28px;
     }
 
     .related-articles__wrapper h4 {
         font-family: Myriad Pro;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 48px;
         letter-spacing: 2%;
         text-transform: uppercase;
@@ -134,8 +184,9 @@
 
     .related-articles__items {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: unset;
+        gap: 0;
+        margin-bottom: 40px;
 
     }
 
@@ -149,7 +200,7 @@
 
     .related-articles__item .img-wrapper {
         width: 100%;
-        height: 220px;
+        height: 251px;
     }
 
     .related-articles__item .img-wrapper img {
@@ -161,12 +212,13 @@
     .related-articles__item-text {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 20px;
     }
 
     .related-articles__item-text__info {
         display: flex;
         flex-direction: row;
+        margin-top: 12px;
         height: 35px;
         border-bottom: 1px solid #758592;
         justify-content: space-between;
@@ -182,10 +234,10 @@
         color: #FFFFFF;
         border-radius: 50px;
         display: flex;
-        padding: 0 12px;
+        padding: 2px 8px;
         justify-content: center;
         align-items: center;
-        height: 20px;
+        height: 15px;
         background: #727DA3;
     }
 

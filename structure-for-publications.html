@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/structure-for-publications/text-sections.css">
     <link rel="stylesheet" href="css/structure-for-publications/video-section.css">
     <link rel="stylesheet" href="css/structure-for-publications/related.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -137,11 +137,31 @@
         </div>
     </div>
     <div class="related-articles">
-        <div class="app-container">
-            <div class="related-articles__wrapper">
-                <h4>RELATED ARTICLES</h4>
-                <div class="related-articles__items">
-                    <div class="related-articles__item">
+        <div class="app-container ">
+            <div class="related-articles__wrapper swiper">
+                <div class="title">
+                    <h4>RELATED ARTICLES</h4>
+                    <div class="navs-slider">
+                        <svg class="swiper-button-prev" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="31" height="31" rx="7.5" stroke="#727DA3"  />
+                            <path
+                                d="M19.3904 11.0799L18.2037 9.8999L11.6104 16.4999L18.2104 23.0999L19.3904 21.9199L13.9704 16.4999L19.3904 11.0799Z"
+                                fill="#727DA3"  />
+                        </svg>
+                        <svg class="swiper-button-next" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="32" y="32" width="31" height="31" rx="7.5" transform="rotate(-180 32 32)"
+                                stroke="#727DA3" />
+                            <path
+                                d="M13.6096 21.9201L14.7963 23.1001L21.3896 16.5001L14.7896 9.9001L13.6096 11.0801L19.0296 16.5001L13.6096 21.9201Z"
+                                fill="#727DA3" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="related-articles__items swiper-wrapper">
+                    <div class="related-articles__item swiper-slide">
                         <div class="img-wrapper">
                             <img src="img/text-section-1.png" alt="">
                         </div>
@@ -166,7 +186,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="related-articles__item">
+                    <div class="related-articles__item swiper-slide">
                         <div class="img-wrapper">
                             <img src="img/text-section-1.png" alt="">
                         </div>
@@ -191,7 +211,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="related-articles__item">
+                    <div class="related-articles__item swiper-slide">
                         <div class="img-wrapper">
                             <img src="img/text-section-1.png" alt="">
                         </div>
@@ -220,7 +240,8 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
